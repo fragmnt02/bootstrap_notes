@@ -1,69 +1,80 @@
-SISTEMA DE REGILLAS:
+# SISTEMA DE REGILLAS:
 los contenedores van en el siguiente orden container -> row -> col
 
-container-fluid si se quiere que ocupe el ancho completo
+Contenedores:
+```
+containe
+container-fluid
+row
+col
+```
+`container-fluid` si se quiere que ocupe el ancho completo
 
-- containe
- - container-fluid
- - row
- - col
- - col-xs 
- - col-sm 
- - col-md
- - col-lg 
- - col-xl 
+tamaños:
+```
+col-xs 
+col-sm 
+col-md
+col-lg 
+col-xl 
+```
+Nota: col(xs) col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 si se pone col-12 va a a tomar 12 en todos los tamaños
 
-col(xs) col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 si se pone col-12 va a a tomar 12 en todos los tamaños
-
-OCULTACION
+# OCULTACIÓN
 para que no se vea d-none y eso afectara del mas pequeño al mas grande para cortar ese efecto usar d-md-block en el tamaño deseado
+```
+d-xs-none
+d-sm-none
+d-md-none
+d-lg-none
+d-xl-none
+d-sm-block
+d-sm-inline
+```
 
- - d-xs-none
- - d-sm-none
- - d-md-none
- - d-lg-none
- - d-xl-none
- - d-sm-block
- - d-sm-inline
-
-ALINEACION
-para alinear contenido se usa float-left y float-right, se puede usar en tamaño, ejemplo float-xl-left
+# ALINEACIÓN
+para alinear contenido se usa `float-left` y `float-right`, se puede usar en tamaño, ejemplo `float-xl-left`.
 
 border se utiliza para dibujar un borde
 
-clearfix se utiliza para cuando haya mucho contenido no se choquen
+`clearfix` se utiliza para cuando haya mucho contenido no se choquen
+```
+mx-auto
+justify-content-start
+justify-content-center
+justify-content-end
+justify-content-between
+justify-content-around
+align-items-start 
+align-items-center 
+align-items-end 
+align-self-start 
+align-self-center 
+align-self-end
+fixed-top
+fixed-bottom
+ ```
 
- - mx-auto
- - justify-content-start
- - justify-content-center
- - justify-content-end
- - justify-content-between
- - justify-content-around
- - align-items-start 
- - align-items-center 
- - align-items-end 
- - align-self-start 
- - align-self-center 
- - align-self-end
- - fixed-top
- - fixed-bottom
+# TAMAÑO 
+`w` (ancho): utiliza un porcentaje por ejemplo `w-75` ->utiliza el 75% del ancho del contenedor
 
-TAMAÑO 
+`h` (alto): el mismo caso del anterior
 
- - w (ancho): utiliza un porcentaje por ejemplo w-75 ->utiliza el 75% del ancho del contenedor
- - h (alto): el mismo caso del anterior
+`p` (padding): se combina con los de abajo -> margin es el espacio entre el contenido con el contenedor
 
- - p (padding): se combina con los de abajo -> margin es el espacio entre el contenido con el contenedor
- - m (margin): funciona igual que el anterior -> margen es el espacio entre el contenedor y el area de trabajo
-        Se utilizan asi: mt-23 que significa margin-top:23px;
- - t (top)
- - b (bottom)
- - l (left)
- - r (right)
+`m` (margin): funciona igual que el anterior -> margen es el espacio entre el contenedor y el area de trabajo. Se utilizan asi: `mt-23` que significa `margin-top:23px;`
+`t` (top)
 
-7. TIPOGRAFÍA
- - display: cambia fuente va de 0 a 4... ejemplo display-4
- - small: hace fuente chica
+`b` (bottom)
+
+`l` (left)
+
+`r` (right)
+
+# TIPOGRAFÍA
+`display` cambia fuente va de 0 a 4... ejemplo `display-4`.
+
+`small` hace fuente chica
  - mark: da sombreado
 
  Nota: 
@@ -80,7 +91,7 @@ text-lowercase
 text-uppercase
 text-capitalize Cada Palabra Empieza En Mayuscula Asi
 
-8. BACKGROUND  y colores
+# BACKGROUND  Y COLORES
  - bg-primary azul
  - bg-secondary gris oscuro
  - bg-success verde 
@@ -92,7 +103,7 @@ text-capitalize Cada Palabra Empieza En Mayuscula Asi
 
  Nota: los colores funcionan con text, table igual
 
-9. TABLAS
+# TABLAS
 para dar diseño a tablas:
  - table: solo una linea divisores de columnas
  - table-striped igual que el anterior pero sombrea
@@ -119,7 +130,7 @@ para dar diseño a tablas:
  - table-responsive-lg
  - table-responsive-xl
   
-10. IMÁGENES 
+# IMÁGENES 
  - rounded bordes redondeados
  - rounded-circle le da forma circulo
 
@@ -134,11 +145,11 @@ para dar diseño a tablas:
 Nota: le funcionan w y h, por ejemplo h-20 -> height:20px;
 
   
-11. JUMBOTRON  -  2:11:39 
+# JUMBOTRON
  - jumbotron lo resalta o mete en una caja
  - jumbotron-fluid no deja espacio de margen entre la caja y el texto
  
-12. ALERT 
+# ALERT 
  - alert lo resalta mediante espaciado
 
  colorea el alert
@@ -154,7 +165,7 @@ Nota: le funcionan w y h, por ejemplo h-20 -> height:20px;
  - alert-link
  - alert-dismissable agrega boton para cerrar el remarcado, se necesita crear un boton de clase close, data-dismiss alert y contenido &times;
    
-13. BOTONES  
+# BOTONES  
  - btn clase que hay que agregar para diseño de bootstrap
 
  colores de boton
@@ -188,7 +199,7 @@ tamaño boton
  - active
  - disabled
 
-14. GRUPO DE BOTONES 
+# GRUPO DE BOTONES 
  - btn-group clase para grupo de botones (horizontal)
  
  tamaños de botones
@@ -203,7 +214,7 @@ tamaño boton
  - dropdown-menu crea un menu desplegable, esto va en un div
  - dropdown-item  crea un item de un menu desplegable, esto en un a
 
-15. INSIGNIAS 
+# INSIGNIAS 
  - badge remarca un texto como para marcar algo asi como jefe
 
  color de insignia
@@ -219,7 +230,7 @@ tamaño boton
  - badge-pill  le cambia tantito la forma como de pildora
  - inside para ponerlo dentro de botones
 
-16. BARRA DE PROGRESO 
+# BARRA DE PROGRESO 
  - progress  clase contenedora de la barra de progreso
  - progress-bar clase en un tag donde escribes el porcentaje tal cual y aparece la barra, funciona con height and weight
 
@@ -229,7 +240,7 @@ agrega lineas a la barra
 
  - progress-bar-animated agrega animacion
   
-17. PAGINACIÓN 
+# PAGINACIÓN 
  - pagination barra de navegacion como < prev 1 2 3 next >, esto va en un ul tag
 - page-item va en un li y representa cada numero de la barra
 
@@ -245,7 +256,7 @@ cambia tamaño, va en pagination
 otra barra de navegacion diferente estilo directorio, se maneja igual
  - breadcrumb -> breadcrumb-item
  
-18. LISTAS  
+# LISTAS  
 funciona como html
  - list-group ul
  - list-group-item li
@@ -256,7 +267,7 @@ funciona como html
 igual funciona con div y a tags
 - list-group-item-action: cambia el color de un item
 
-19. TARJETAS  
+# TARJETAS  
  - card div funciona con w y h
  componentes:
  - card-header
@@ -266,7 +277,7 @@ igual funciona con div y a tags
  - card-text 
  - card-link
 
-20. DROPDOWN MENU 
+# DROPDOWN MENU 
 va en un div con clase dropdown
     dentro va un boton con data-toggle dropdown y clase dropdown-toggle
  - dropdown-menu clase del div contenedor del menu
@@ -275,12 +286,12 @@ va en un div con clase dropdown
  - dropdown-header div para agregar titulo al menu
  - dropup si se cambia dropdown por dropup en el div principal, el menu se despliega hacia arriba
 
-21. PLEGABLES  
+# PLEGABLES  
  - collapse data-toggle que se le agrega a un boton, ademas de un data-target con el id del contenido a mostrar cuando se accione
     el contenido a mostrar debe tener el id del data target anterior y clase collapse
  - show
 
-22. MENÚS DE NAVEGACIÓN
+# MENÚS DE NAVEGACIÓN
 va dentro de column
  - nav clase del ul que contiene cada item
  - nav-item clase del li
@@ -294,7 +305,7 @@ va dentro de column
  - nav-justified se separan los botones y distribuyen a lo ancho
  - dropdown se agrega la clase a un boton mas la estructura del dropdown para hacer un dropdown en un boton
   
-23. BARRA DE NAVEGACIÓN  -  3:39:32
+# BARRA DE NAVEGACIÓN  -  3:39:32
  - navbar clase del nav que contiene a todo
  - navbar-nav clase del ul que contiene a los items
  - navbar-item clase del li que representa cada item del menu
@@ -311,7 +322,7 @@ igual se pueden agregar dropdown como en el nav anterior
  - fixed-top se agrega en la clase del nav principal para fijar el navbar
  - fixed-bottom lo mismo pero abajo en vez de arriba
 
-24. FORMULARIOS  -  3:59:12
+# FORMULARIOS  -  3:59:12
  - form-control
  - form-check-label
  - form-check-input
@@ -325,7 +336,7 @@ igual se pueden agregar dropdown como en el nav anterior
  - radio-inline
  - select
 
-25. CAROUSEL  -  4:16:09
+# CAROUSEL  -  4:16:09
  - carousel
  - slide
  - carousel-indicators
@@ -337,7 +348,7 @@ igual se pueden agregar dropdown como en el nav anterior
  - carousel-control-prev-icon
  - carousel-control-next-icon
 
-26. MODAL  -  4:29:45
+# MODAL  -  4:29:45
  - modal 
  - fade
  - modal-dialog
