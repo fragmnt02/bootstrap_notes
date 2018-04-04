@@ -18,7 +18,7 @@ col-md
 col-lg 
 col-xl 
 ```
-Nota: col(xs) col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 si se pone col-12 va a a tomar 12 en todos los tamaños
+Nota: `col`(xs) `col-12` `col-sm-12` `col-md-12` `col-lg-12` `col-xl-12` si se pone `col-12` va a a tomar 12 en todos los tamaños
 
 # OCULTACIÓN
 para que no se vea d-none y eso afectara del mas pequeño al mas grande para cortar ese efecto usar d-md-block en el tamaño deseado
@@ -75,33 +75,51 @@ fixed-bottom
 `display` cambia fuente va de 0 a 4... ejemplo `display-4`.
 
 `small` hace fuente chica
- - mark: da sombreado
+`mark` da sombreado
 
  Nota: 
- font-weight-bold es negritas 
- font-weight-normal es normal 
- font-weight-light suave 
- font-italic cursiva
-  text-justify jusitfica el texto
-text-left
-text-right
-text-center
-text-nowrap - que sea solo una linea
-text-lowercase
-text-uppercase
-text-capitalize Cada Palabra Empieza En Mayuscula Asi
+`font-weight-bold` es negritas 
+
+`font-weight-normal` es normal 
+
+`font-weight-light` suave 
+
+`font-italic` cursiva
+
+`text-justify` jusitfica el texto
+
+`text-left` texto a la izquierda
+
+`text-right` texto a la derecha
+
+`text-center` texto al centro
+
+`text-nowrap` - que sea solo una linea
+
+`text-lowercase` minuscula
+
+`text-uppercase` mayuscula
+
+`text-capitalize` Cada Palabra Empieza En Mayuscula Asi
 
 # BACKGROUND  Y COLORES
- - bg-primary azul
- - bg-secondary gris oscuro
- - bg-success verde 
- - bg-info azul agua
- - bg-warning amarillo
- - bg-danger rojo
- - bg-dark gris mas oscuro casi negro
- - bg-light blanco
+`bg-primary` azul
 
- Nota: los colores funcionan con text, table igual
+`bg-secondary` gris oscuro
+
+`bg-success` verde 
+
+`bg-info` azul agua
+
+`bg-warning` amarillo
+
+`bg-danger` rojo
+
+`bg-dark` gris mas oscuro casi negro
+
+`bg-light` blanco
+
+ Nota: los colores funcionan con `text`, `table` igual
 
 # TABLAS
 para dar diseño a tablas:
