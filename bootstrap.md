@@ -1,7 +1,7 @@
 # SISTEMA DE REGILLAS:
 los contenedores van en el siguiente orden container -> row -> col
 
-Contenedores:
+## Contenedores
 ```
 containe
 container-fluid
@@ -10,7 +10,7 @@ col
 ```
 `container-fluid` si se quiere que ocupe el ancho completo
 
-tamaños:
+## tamaños
 ```
 col-xs 
 col-sm 
@@ -75,9 +75,9 @@ fixed-bottom
 `display` cambia fuente va de 0 a 4... ejemplo `display-4`.
 
 `small` hace fuente chica
+
 `mark` da sombreado
 
- Nota: 
 `font-weight-bold` es negritas 
 
 `font-weight-normal` es normal 
@@ -122,149 +122,180 @@ fixed-bottom
  Nota: los colores funcionan con `text`, `table` igual
 
 # TABLAS
-para dar diseño a tablas:
- - table: solo una linea divisores de columnas
- - table-striped igual que el anterior pero sombrea
- - table-bordered tabla comun rayas grises
+## Para dar diseño a tablas:
 
- - table-hover se sombrea cuando pasa el mouse por encima
+`table` solo una linea divisores de columnas.
 
- para colorear tabla
- - table-primary
- - table-secondary
- - table-success
- - table-danger
- - table-info
- - table-warning
- - table-active
- - table-dark
- - table-light
+`table-striped` igual que el anterior pero sombrea.
 
- - table-sm reduce de tamaño la tabla 
- - table-responsive la hace responsive
- a partir de cual es responsive:
- - table-responsive-sm
- - table-responsive-md
- - table-responsive-lg
- - table-responsive-xl
-  
+`table-bordered` tabla comun rayas grises.
+
+`table-hover` se sombrea cuando pasa el mouse por encima.
+
+## para colorear tabla
+ ```
+table-primary
+table-secondary
+table-success
+table-danger
+table-info
+table-warning
+table-active
+table-dark
+table-light
+ ```
+
+`table-sm` reduce de tamaño la tabla.
+`table-responsive` la hace responsive.
+
+## A partir de cual es responsive:
+```
+table-responsive-sm
+table-responsive-md
+table-responsive-lg
+table-responsive-xl
+ ```
+  
 # IMÁGENES 
- - rounded bordes redondeados
- - rounded-circle le da forma circulo
+`rounded` bordes redondeados.
+ 
+`rounded-circle` le da forma circulo.
 
- - img-thumbnail crea un marco en la imagen
+`img-thumbnail` crea un marco en la imagen.
 
- alinea izquierda o derecha:
- - float-left
- - float-right
+## Alinea izquierda o derecha:
+```
+float-left
+float-right
+```
 
- - img-fluid que se adapta a el tamaño del contenedor
+`img-fluid` que se adapta a el tamaño del contenedor.
 
-Nota: le funcionan w y h, por ejemplo h-20 -> height:20px;
+Nota: le funcionan `w` y `h`, por ejemplo `h-20` -> `height:20px;`.
 
   
 # JUMBOTRON
- - jumbotron lo resalta o mete en una caja
- - jumbotron-fluid no deja espacio de margen entre la caja y el texto
+`jumbotron` lo resalta o mete en una caja.
+
+`jumbotron-fluid` no deja espacio de margen entre la caja y el texto.
  
 # ALERT 
- - alert lo resalta mediante espaciado
+`alert` resalta mediante espaciado.
 
- colorea el alert
- - alert-success
- - aler-info
- - alert-warning
- - alert-danger
- - alert-primary
- - alert-secondary
- - alert-light
- - alert-dark
+ ## colorea el alert
+ ```
+alert-success
+alert-info
+alert-warning
+alert-danger
+alert-primary
+alert-secondary
+alert-light
+alert-dark
+```
 
- - alert-link
- - alert-dismissable agrega boton para cerrar el remarcado, se necesita crear un boton de clase close, data-dismiss alert y contenido &times;
+`alert-link`
+
+`alert-dismissable` agrega boton para cerrar el remarcado, se necesita crear un **boton** de clase `close`, `data-dismiss alert` y contenido `&times`;
    
-# BOTONES  
- - btn clase que hay que agregar para diseño de bootstrap
+# BOTONES  
+`btn clase` que hay que agregar para diseño de bootstrap.
 
- colores de boton
- - btn-primary
- - btn-secondary
- - btn-success
- - btn-info
- - btn-warning
- - btn-danger
- - btn-dark
- - btn-linht
+ ## colores de boton
+ ```
+btn-primary
+btn-secondary
+btn-success
+btn-info
+btn-warning
+btn-danger
+btn-dark
+btn-light
+ ```
 
- - btn-link
+ `- btn-link`
 
- color borde boton (boton blanco)
- - btn-outline-primary
- - btn-outline-secondary
- - btn-outline-success
- - btn-outline-info
- - btn-outline-warning
- - btn-outline-danger
- - btn-outline-dark
- - btn-outline-light
- - btn-outline-link
+ ## color borde boton (boton blanco)
+ ```
+btn-outline-primary
+btn-outline-secondary
+btn-outline-success
+btn-outline-info
+btn-outline-warning
+btn-outline-danger
+btn-outline-dark
+btn-outline-light
+btn-outline-link
+ ```
 
-tamaño boton
- - btn-lg grande 
- - btn-sm chico
- - btn-block ocupa todo el ancho de la pagina
- remarca boton por activo o desabilitado (no deja usar)
- - active
- - disabled
+## tamaño boton
+```
+btn-lg grande 
+btn-sm chico
+```
+`btn-block`ocupa todo el ancho de la pagina 
+
+## remarca boton por activo o desabilitado (no deja usar).
+```
+active
+disabled
+```
 
 # GRUPO DE BOTONES 
- - btn-group clase para grupo de botones (horizontal)
+`btn-group` clase para grupo de botones (horizontal).
  
- tamaños de botones
- - btn-group-lg 
- - btn-group-sm 
- - btn-group-xs 
+ ## tamaños de botones
+ ```
+btn-group-lg 
+btn-group-sm 
+btn-group-xs 
+```
 
- modifica a grupo vertical
- - btn-group-vertical 
+`btn-group-vertical` modifica a grupo vertical.
  
- - dropdown-toggle crea menu desplegable en boton
- - dropdown-menu crea un menu desplegable, esto va en un div
- - dropdown-item  crea un item de un menu desplegable, esto en un a
+`dropdown-toggle` crea menu desplegable en boton.
+`dropdown-menu` crea un menu desplegable, esto va en un div.
+`dropdown-item`  crea un item de un menu desplegable, esto en un a.
 
 # INSIGNIAS 
- - badge remarca un texto como para marcar algo asi como jefe
+`badge` remarca un texto como para marcar algo asi como jefe.
 
- color de insignia
- - badge-primary
- - badge-secondary
- - badge-success
- - badge-danger
- - badge-warning
- - badge-info
- - badge-light
- - badge-dark
+ ## color de insignia
+ ```
+badge-primary
+badge-secondary
+badge-success
+badge-danger
+badge-warning
+badge-info
+badge-light
+badge-dark
+ ```
 
- - badge-pill  le cambia tantito la forma como de pildora
- - inside para ponerlo dentro de botones
+`badge-pill`  le cambia tantito la forma como de pildora.
+`inside` para ponerlo dentro de botones.
 
 # BARRA DE PROGRESO 
- - progress  clase contenedora de la barra de progreso
- - progress-bar clase en un tag donde escribes el porcentaje tal cual y aparece la barra, funciona con height and weight
+`progress`  clase contenedora de la barra de progreso
+`progress-bar` clase en un tag donde escribes el porcentaje tal cual y aparece la barra, funciona con height and weight
 
-agrega lineas a la barra
+## agrega lineas a la barra
+```
  - striped
  - progress-bar-striped
+ ```
 
- - progress-bar-animated agrega animacion
+`progress-bar-animated` agrega animacion.
   
 # PAGINACIÓN 
- - pagination barra de navegacion como < prev 1 2 3 next >, esto va en un ul tag
-- page-item va en un li y representa cada numero de la barra
+`pagination` barra de navegacion como < prev 1 2 3 next >, esto va en un **ul** tag.
+`page-item` va en un **li** y representa cada numero de la barra.
 
-activa o desactiva boton
+## activa o desactiva boton
+```
  - active
  - disabled
+```
 
  - sizing
 cambia tamaño, va en pagination
@@ -323,7 +354,7 @@ va dentro de column
  - nav-justified se separan los botones y distribuyen a lo ancho
  - dropdown se agrega la clase a un boton mas la estructura del dropdown para hacer un dropdown en un boton
   
-# BARRA DE NAVEGACIÓN  -  3:39:32
+# BARRA DE NAVEGACIÓN
  - navbar clase del nav que contiene a todo
  - navbar-nav clase del ul que contiene a los items
  - navbar-item clase del li que representa cada item del menu
@@ -340,7 +371,7 @@ igual se pueden agregar dropdown como en el nav anterior
  - fixed-top se agrega en la clase del nav principal para fijar el navbar
  - fixed-bottom lo mismo pero abajo en vez de arriba
 
-# FORMULARIOS  -  3:59:12
+# FORMULARIOS 
  - form-control
  - form-check-label
  - form-check-input
@@ -354,7 +385,7 @@ igual se pueden agregar dropdown como en el nav anterior
  - radio-inline
  - select
 
-# CAROUSEL  -  4:16:09
+# CAROUSEL
  - carousel
  - slide
  - carousel-indicators
@@ -366,7 +397,7 @@ igual se pueden agregar dropdown como en el nav anterior
  - carousel-control-prev-icon
  - carousel-control-next-icon
 
-# MODAL  -  4:29:45
+# MODAL
  - modal 
  - fade
  - modal-dialog
